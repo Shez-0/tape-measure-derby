@@ -5,11 +5,11 @@
    ===================================================================== */
 
 /* ---------- config ---------- */
-const SWINGS = 10;          // questions per derby
-const CLOCK = 30;           // seconds on the pitch clock
+const SWINGS = 7;          // questions per derby
+const CLOCK = 45;           // seconds on the pitch clock
 const MAX_STRIKES = 3;
-const STRIKE_TAX = 0.10;    // each strike takes 10% off the swing
-const ROSTERS_PER_GAME = 4; // the rest come from the other categories
+const STRIKE_TAX = 0.0;    // each strike takes 0% off the swing
+const ROSTERS_PER_GAME = 2; // the rest come from the other categories
 const HR_FT = 400, MOON_FT = 460, MAX_FT = 540;
 
 // rarity tier -> distance range in feet
