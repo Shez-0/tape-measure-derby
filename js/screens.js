@@ -9,10 +9,10 @@ function viewHome(){
   <section class="card">
     <p class="eyebrow">Baseball trivia home run derby</p>
     <h1 class="title">The deeper the cut, <span>the farther it flies.</span></h1>
-    <p class="lede">Ten questions, ten swings. Every question has dozens of right answers. Name one almost nobody would think of and it leaves the park.</p>
+    <p class="lede">Seven questions, Seven swings. Every question has dozens of right answers. Name one almost nobody would think of and it leaves the park.</p>
     <div class="acts">
       <button class="btn" data-act="daily">${done ? "Today's box score" : prog ? "Resume daily" : "Daily derby"}<small>${done ? fmt(s.daily.total) + " ft today" : "#" + (day + 1) + " &middot; " + dateLabel(day) + (prog ? " &middot; swing " + (s.prog.rounds.length + 1) : "")}</small></button>
-      <button class="btn alt" data-act="free">Free swing<small>10 random questions</small></button>
+      <button class="btn alt" data-act="free">Free swing<small>7 random questions</small></button>
     </div>
   </section>
   <section class="card">
