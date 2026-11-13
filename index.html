@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0a0d2a">
+<title>Tape Measure Derby</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+  <div class="top">
+    <button class="brand" data-act="home" aria-label="Tape Measure Derby, back to home">TAPE MEASURE <span>DERBY</span></button>
+    <button class="mini" id="snd" data-act="sound" aria-pressed="true">SOUND ON</button>
+  </div>
+  <div class="stagewrap" id="wrap">
+    <canvas id="stage" width="240" height="126" role="img" aria-label="Pixel art ballpark. The batter hits each answer; rarer answers fly farther."></canvas>
+    <div class="hud" id="hud" hidden>
+      <span id="hSwing">SWING 1/10</span>
+      <span class="lamps" aria-label="Strikes"><span>K</span><i class="lamp"></i><i class="lamp"></i><i class="lamp"></i></span>
+      <span><b id="hTotal">0</b> FT</span>
+    </div>
+  </div>
+  <div class="clock" id="clock" hidden><div class="bar"><i></i></div><span class="num">0:30</span></div>
+  <main id="panel"></main>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script src="js/data.js"></script>
+<script src="js/config.js"></script>
+<script src="js/helpers.js"></script>
+<script src="js/sound.js"></script>
+<script src="js/field.js"></script>
+<script src="js/game.js"></script>
+<script src="js/screens.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
